@@ -4,7 +4,9 @@
   "description": "mini project wih cypress and jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "cypress:chrome": "cypress run --browser chrome",
+    "cypress:default": "cypress run"
   },
   "keywords": [
     "cypress",
