@@ -8,7 +8,7 @@ pipeline{
         ansiColor('xterm')
     }
     stages{
-        stage('Deploying'){
+        stage('Building'){
             steps{
             echo "Building the app"
 
