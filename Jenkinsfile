@@ -30,6 +30,7 @@ pipeline{
     post{
         always{
             publishHTML (target : [allowMissing: false, alwaysLinkToLastBuild: true,keepAll: true,reportDir: 'cypress/reports/html',reportFiles: 'index.html',reportName: 'My Reports',reportTitles: 'The Report'])
+            deleteDir()
         }
     }
 }
