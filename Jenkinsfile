@@ -2,7 +2,7 @@ pipeline{
     agent any
     parameters{
         string(name: 'SPEC',defaultValue: "cypress/e2e/**/**",description:"Enter the script path that you wanted execute")
-        choice(name:'BROWSER',choices:[chrome,electron],description:"Choice the browser where you want to execute ypur script")
+        choice(name:'BROWSER',choices:['chrome','electron'],description:"Choice the browser where you want to execute ypur script")
     }
     options{
         ansiColor('xterm')
